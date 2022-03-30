@@ -1,0 +1,136 @@
+1.HTML 标题
+HTML 标题（Heading）是通过 <h1> - <h6> 标签来定义的.
+
+h是英文header标题的缩写，标题无处不在，它的应用范围十分广泛：网站结构、写作文、PPT 等。
+
+这里有六个标题元素标签 —— <h1>、<h2> 、<h3>、<h4>、<h5>、<h6>，每个元素代表文档中不同级别的内容：
+<h1> 表示主标题（ the main heading ），<h2> 表示二级子标题（ subheadings ），<h3>表示三级子标题（ sub-subheadings ），<h4>、<h5>、<h6>字体的大小依次递减。
+ 
+ 示例代码：
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+
+    <h1>这是标题1</h1>
+    <h2>这是标题2</h2>
+    <h3>这是标题3</h3>
+    <h4>这是标题4</h4>
+    <h5>这是标题5</h5>
+    <h6>这是标题6</h6>
+
+</body>
+</html>
+
+
+2.HTML 段落
+HTML 段落是通过标签<p>来定义的，P是英文paragraph段落的缩写，经常被用来创建一个段落，就和你写作文一样，
+示例代码：
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>W3Cschool(w3cschool.cn)</title>
+</head>
+<body>
+
+    <p>这是一个段落。</p> 
+    <p>这是另外一个段落。</p>
+
+</body>
+</html>
+示例代码：
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+    <h1>三国演义</h1>
+
+    <p>罗贯中</p>
+
+    <h2>第一回 宴桃园豪杰三结义 斩黄巾英雄首立功</h2>
+
+    <p>话说天下大势，分久必合，合久必分。</p>
+
+    <h2>第二回 张翼德怒鞭督邮 何国舅谋诛宦竖</h2>
+
+    <p>且说董卓字仲颖</p>
+
+    <h3>却说张飞</h3>
+
+    <p>却说张飞饮了数杯闷酒</p>
+
+</body>
+</html>
+
+上述实例所涉及的元素具体代表什么，完全取决于作者编辑的内容，只要确保层次结构是合理的。在创建此类结构时，您只需要记住以下几点：
+首先，您应该只对每个页面使用一次<h1>，这是主标题，所有其他标题位于层次结构中的下方。
+其次，请确保在层次结构中以正确的顺序使用标题。不要使用<h3>来表示副标题，后面跟<h2>来表示副副标题，这是没有意义的，会导致奇怪的结果。
+最后，在可用的六个标题级别中，您应该保证每个页面中标题级别的使用不超过三个，除非您认为有必要使用更多。具有许多标题级别的文档会变得难以操作并且难以导航。
+在这种情况下，如果可能，建议将内容分散在多个页面上。 
+
+
+3.HTML 中的空格
+在代码中可能包含了很多的空格——这是没有必要的
+示例代码：
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+ 
+    <p>狗 狗 很 呆 萌。</p>
+  
+    <p>狗 狗        很
+
+         呆 萌。</p>
+ 
+</body>
+</html>
+
+
+4.HTML 链接
+HTML 链接是通过标签<a>来定义的。a标签，也叫anchor（锚点）元素，既可以用来链接到外部地址实现页面跳转功能，也可以链接到当前页面的某部分实现内部导航功能。
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+
+    <a href="https://www.w3cschool.cn">这是一个链接使用了 href 属性</a>
+
+</body>
+</html>
+
+
+5.HTML 图像
+HTML 图像是通过标签<img>来定义的。使用img元素来为你的网站添加图片，使用src 属性指向一个图片的具体地址。
+
+举例如下：<img src="https://www.your-image-source.com/your-image.jpg">
+
+请注意：img元素是自关闭元素，不需要结束标记。
+示例代码：
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   
+</head>
+<body>
+
+    <img src="/statics/images/logonew2.png"  width="206"  height="36" >
+
+</body>
+</html>
+ 
+ 
