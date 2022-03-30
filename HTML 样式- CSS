@@ -1,0 +1,87 @@
+CSS（Cascading Style Sheet）可译为“层叠样式表”或“级联样式表”，它定义如何显示 HTML 元素，用于控制Web页面的外观。通过使用 CSS 实现页面的内容与表现形式分离，极大提高了工作效率 。样式存储在样式表中，通常放在 <head> 部分或存储在 外部 CSS 文件中。作为网页标准化设计的趋势，CSS 取得了浏览器厂商的广泛支持，正越来越多的被应用到网页设计中去。
+
+网页现在的新标准是 W3C 。目前的模式是 Html + Css + Javascript ，如何理解呢，就是 Html 是网页的结构，CSS 是网页的样式，Javascript是行为。结构就是盖房子先要把结构建出来，然后用 CSS 来装饰。其实你在用 Dreamweaver 做网页时就已经用到了 CSS，比如你用 DW 的属性面板来设置一个字的字体、颜色和大小，当你选好后，就会自动生成一个 .style1 的红色代码，在 <style></style> 之间不知道你注意过没有，这就是 CSS。
+
+
+
+2.如何使用 CSS
+CSS 是在 HTML 4 开始使用的,是为了更好的渲染 HTML 元素而引入的.
+
+CSS 可以通过以下方式添加到 HTML 中:
+
+内联样式- 在 HTML 元素中使用 "style" 属性
+内部样式表 -在 HTML 文档头部 <head> 区域使用 <style> 元素 来包含 CSS
+外部引用 - 使用外部 CSS 文件
+最好的方式是通过外部引用 CSS 文件.
+
+内联样式
+当特殊的样式需要应用到个别元素时，就可以使用内联样式，你可以在 <head> 部分通过 <style> 标签定义内部样式表。 使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何 CSS 属性。以下实例显示出如何改变段落的颜色。
+
+代码示例：
+
+<head>
+
+<style type="text/css">
+
+body {background-color:yellow;}
+
+p {color:blue;}
+
+</style>
+
+</head> 
+
+
+HTML样式实例 - 背景颜色
+背景色属性（background-color）定义一个元素的背景颜色：
+代码示例：
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    
+</head>
+<body style="background-color:yellow;">
+    
+    <h2 style="background-color:red;">这是一个标题</h2>
+    <p style="background-color:green;">这是一个段落。</p>
+    
+</body>
+</html>
+
+HTML 样式实例 - 字体, 字体颜色 ，字体大小
+我们可以使用 font-family（字体），color（颜色），和 font-size（字体大小）属性来定义字体的样式:
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    
+</head>
+<body>
+    
+    <h1 style="font-family:verdana;">一个标题</h1>
+    <p style="font-family:arial;color:red;font-size:20px;">一个段落。</p>
+    
+</body>
+</html>
+注意：现在通常使用 font-family（字体），color（颜色），和 font-size（字体大小）属性来定义文本样式，而不是使用 <font> 标签。
+
+
+
+HTML 样式实例 - 文本对齐方式
+使用 text-align（文字对齐）属性指定文本的水平与垂直对齐方式：
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    
+</head>
+<body>
+
+    <h1 style="text-align:center;">居中对齐的标题</h1>
+    <p>这是一个段落。</p>
+
+</body>
+</html>
+
+注意：文本对齐属性 text-align 取代了旧标签 <center> 。
