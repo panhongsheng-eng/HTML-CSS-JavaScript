@@ -1,0 +1,76 @@
+1.HTML 图像
+　使用<img>标签定义 HTML 页面中的图像。<img>标签有两个必需的属性：src和alt。
+
+
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    
+</head>
+<body>
+
+    <h2>挪威山旅行</h2>
+    <img border="0" src="/statics/images/course/pulpit.jpg" alt="Pulpit rock" width="304" height="228">
+
+</body>
+</html>
+
+
+2.HTML 图像- 图像标签（<img>）和源属性（Src）
+　在 HTML 中，图像由<img>标签定义。
+
+　<img>是空标签，意思是说，它只包含属性，并且没有闭合标签。
+
+　要在页面上显示图像，你需要使用源属性（src）。src指 "source"。源属性的值是图像的 URL 地址。
+
+　定义图像的语法是：
+
+<img src="url" alt="some_text">
+
+　URL 指存储图像的位置。如果名为 "boat.gif" 的图像位于 www.w3cschool.cn 的 images 目录中，那么其 URL 为 //www.w3cschool.cn/images/boat.gif。
+
+　浏览器将图像显示在文档中图像标签出现的地方。如果你将图像标签置于两个段落之间，那么浏览器会首先显示第一个段落，然后显示图片，最后显示第二段。
+ 
+ 
+
+ 
+ 
+ 3.HTML 图像- Alt属性
+替换文本属性的值是用户定义的。
+<img src="boat.gif" alt="Big Boat">
+在浏览器无法载入图像时，替换文本属性告诉读者他们失去的信息。此时，浏览器将显示这个替代性的文本而不是图像。为页面上的图像都加上替换文本属性是个好习惯，
+ 这样有助于更好的显示信息，并且对于那些使用纯文本浏览器的人来说是非常有用的。
+ 
+ 
+ 
+ 4.HTML 图像- 设置图像的高度与宽度
+　height（高度）与width（宽度）属性用于设置图像的高度与宽度。您可以在编程测试中调整一张图像的大小。
+
+　属性值默认单位为像素:
+
+<img src="pulpit.jpg" alt="Pulpit rock" width="304" height="228">
+
+提示: 指定图像的高度和宽度的一个很好的习惯。如果图像指定了高度宽度，页面加载时就会保留指定的尺寸。如果没有指定图片的大小，加载页面时有可能会破坏HTML页面的整体布局。
+
+
+
+设置图像边框
+　在<img>标签中您可以使用border属性以像素为单位指定边框粗细。厚度为 0 表示图片周围没有边框。
+
+<img src="/statics/images/course/pulpit.jpg" alt="Pulpit rock" border = "3">
+
+
+设置图像对齐
+　默认情况下，图像在页面中将显示为左侧对齐，在<img>标签中您可以使用align属性将设置图像的对齐方式：center(居中)或right(右侧)。
+
+<img src="/statics/images/course/pulpit.jpg" alt="Pulpit rock" align="right">
+
+
+基本的注意事项 - 有用的提示：
+注意: 假如某个 HTML 文件包含十个图像，那么为了正确显示这个页面，需要加载 11 个文件。加载图片是需要时间的，所以我们的建议是：慎用图片。
+
+注意: 加载页面时，要注意插入页面图像的路径，如果不能正确设置图像的位置，浏览器无法加载图片，图像标签就会显示一个破碎的图片。
+
+ 
+
